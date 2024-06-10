@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="/style/login_signup.css" />
+	<title>Login</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#section1" class="navbar-logo">
+                <img src="/image/cat-logo.svg" width="30" height="20">Blog
+            </a>
+            <div class="navbar-links">
+                <div class="dropdown">
+                    <a>Menu</a>
+                    <div class="dropdown-content">
+                        <a href="/page/post/1.html">勞贖</a>
+                        <a href="/page/post/2.html">Minecraft廢土神社</a>
+						<a href="/page/post/3.html">東北少帥張學良</a>
+                        <a href="#section3">個人介紹</a>
+                    </div>
+                </div>
+                <a href="signup.html">註冊</a>
+            </div>
+        </div>
+    </nav>
+	<div class="login-container">
+		<h2>請先登入</h2>
+		<form action="/" method="post" onsubmit="return validateForm()">
+			<div class="input-container">
+				<label for="email">Email/手機號碼:</label>
+				<input type="email" id="email" name="email" required>
+				<span class="error-message" id="email-error">請輸入您的 Email 或手機號碼</span>
+			</div>
+			<div class="input-container">
+				<label for="password">密碼:</label>
+				<input type="password" id="password" name="password" required>
+				<span class="error-message" id="password-error">請輸入密碼</span>
+			</div>
+			<div class="button-container">
+				<input type="submit" value="登入">
+			</div>
+		</form>
+	</div>
+    <footer>
+        <p align="center">&copy; 2024 Made By 陳品誌, 洪中原, 張閔暄, 鐘永平. All rights reserved.</p>
+    </footer>
+</body>
+</html>

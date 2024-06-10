@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.login-container {
+  width: 500px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加一些阴影效果 */
+}
+.login-container h2 {
+  text-align: center;
+}
+
+.input-container {
+  margin-bottom: 15px;
+}
+
+.input-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.button-container input {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.button-container input:hover {
+  background-color: #0056b3;
+}
+
+.button-container a {
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.button-container a:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  display: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f1f1f1; /* 可以根据需要调整背景色 */
+}
+
+/* 確保導航欄容器在指定寬度內 */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* 導航欄樣式 */
+.navbar {
+  width: 100%;
+  font-size: 20px;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.navbar-logo {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  display: inline-block;
+}
+
+.navbar-links a:hover {
+  background-color: #575757;
+}
+
+/* 下拉菜單樣式 */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  width: 100%;
+}
+
+.dropdown a{
+  width: 80px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

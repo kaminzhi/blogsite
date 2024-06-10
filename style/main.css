@@ -1,0 +1,208 @@
+@charset "utf-8";
+
+/* CSS文檔 */
+html {
+    scroll-behavior: smooth;
+    /* 使滾動效果平滑 */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: none
+}
+
+/* 轉圈動畫的關鍵幀定義 */
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+/* 不同時間的轉圈動畫類 */
+.a {
+    -webkit-animation: rotation 3s linear infinite;
+}
+
+.b {
+    -webkit-animation: rotation 5s linear infinite;
+}
+
+/* 通用部分樣式 */
+.section {
+    height: 100%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10%;
+    padding-top: 60px;
+}
+
+/* 第一部分的背景顏色 */
+.section1 {
+    background-color: lightblue;
+}
+
+/* 第二部分的背景顏色 */
+.section2 {
+    background-color: lightcoral;
+}
+
+/* 第二部分的背景顏色 */
+.section3 {
+    background-color:  rgb(99, 182, 99);
+}
+
+/* 絕對定位元素 */
+.aa {
+    position: absolute;
+    height: 500px;
+}
+
+.cc {
+    position: absolute;
+    height: 200px;
+}
+
+/* 進入按鈕的樣式 */
+.enterbutton {
+    text-decoration: none;
+    background-color: #171717;
+    color: #fff;
+    border: 2px solid #171717;
+    padding: 15px 25px;
+    border-radius: 10px;
+}
+
+.enterbutton:hover {
+    text-decoration: none;
+    background-color: #fff;
+    color: #171717;
+    border: 2px solid #171717;
+    padding: 15px 25px;
+    border-radius: 10px;
+}
+
+/* 容器樣式 */
+.con {
+    background-color: #fff;
+    color: #171717;
+    border-radius: 10px;
+    width: 500px;
+    font-size: 1.5em;
+    height: 100%;
+}
+
+.con:hover {
+    background-color: #E1E1E1;
+    border-radius: 10px;
+}
+
+/* 下拉菜單樣式 */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.dropdown-content {
+    display: none;
+    width: 100%;
+    position: absolute;
+    background-color: #333;
+}
+
+.dropdown a{
+    width: 80px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* 確保導航欄容器在指定寬度內 */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* 導航欄樣式 */
+.navbar {
+  width: 100%;
+  font-size: 20px;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.navbar-logo {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+}
+
+.navbar-links a:hover {
+    background-color: #575757;
+}
+
+/* Error */
+.error-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.error-page h1 {
+    font-size: 48px;
+    color: #ff0000;
+}
+
+.error-page p {
+    font-size: 18px;
+    color: #333;
+}
+
+.error-page a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.error-page a:hover {
+    text-decoration: underline;
+}
